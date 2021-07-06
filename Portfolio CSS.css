@@ -1,8 +1,10 @@
 /* BRAD TRAVERSY VERSION WITH FLEX BOX */
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-</style>
+
 /* RESET */
+:root{
+    --primary-color:#deb887;
+}
 * {
     box-sizing: border-box;
     padding: 0%;
@@ -37,17 +39,84 @@ p {
 img {
     width: 100%;
 }
-
+/* Navbar stylings--- Primary colory is Burlywood #deb887 */
 .navbar {
-    background-color: burlywood;
+    background-color: var(--primary-color);
     color: black;
     height: 70px;
 }
+.navbar ul {
+    display: flex;
+}
+.navbar a {
+    color: cornsilk;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover {
+    border-bottom: 2px black solid;
+    
+}
+.navbar .flex {
+    justify-content: space-between;
+}
 
+/* Showcase */
+.showcase {
+    height:400px;
+    background-color: var(--primary-color);
+    color: black;
+    position: relative;
+}
+
+.showcase h1{
+    font-size: 50px;
+}
+
+.showcase p{
+    font-size: 20px;
+}
+/* overflow-visible eliminated scroll bar */
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350;
+}
+
+/* Utilities or classes used allover the website */
 .container {
     max-width: 1100px;
     margin: 0% auto;
     overflow: auto;
     padding: 0 40px;
 }
-.flex {}
+/* Created Card for about me section -- box shadow makes card portion seem like its coming off the page*/
+.card { 
+    background-color:white;
+    color: 333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* GRID CLASS--- how wide are the columns? ---gap puts space between columns */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
