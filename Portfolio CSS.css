@@ -1,83 +1,53 @@
-body{
-   font: 15px/1.5 Arial,Helvetica,sans-serif; 
-   padding: 0%;
-   margin: 0%;
-   background-color: blue;
-}
-
-/* TO be responsive set width to PERCENT not PX -- OVER FLOW hiddent to elimante potential scrollbar if content goes over a div*/
-/* GLOBAL */
-.container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* HEADER */
-/* Min height established to keep responsiveness */
-header{
-    background-color: burlywood;
-    color: black;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: blueviolet 3px solid;
-}
-/* Header links */
-/* text decoration: none--remove default underline / Text-transform: uppercase makes everything uperrcase*/
-header a{
-    color white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-/* eliminate bullets and display horizonatlly (float left) CAN MAKE GLOBAL LATER IF I WANT AL UL's to have no margin or padding*/
-header ul{
-    margin: 0%;
+/* BRAD TRAVERSY VERSION WITH FLEX BOX */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+</style>
+/* RESET */
+* {
+    box-sizing: border-box;
     padding: 0%;
-}
-
-header li{
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header h1{
-    float: left;
-}
-
-header #topper{
-    float: left;
-}
-
-header #topper h1{
     margin: 0%;
 }
 
-header nav{
-    float: right;
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height:1.6;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
     margin: 10px;
 }
-
-/* created current class to attach to li in html to highlight-- included hover property */
-header .highlight, header .current a{
-    color: chartreuse;
-    font-weight: bold;
+/* 100 % will keep images in container */
+img {
+    width: 100%;
 }
 
-header a :hover{
-    color: crimson;
-    font-weight: bold;
-}
-/* ABOUT ME PORTION */
-#about-me{
-    min-height: 400px;
-    background: url(./IMG_1313.jpeg) no-repeat;
-    text-align: left;
-    color: white;
-    float: left;
-
+.navbar {
+    background-color: burlywood;
+    color: black;
+    height: 70px;
 }
 
-/* SHOWCASE WORK BOXES PORTION */
+.container {
+    max-width: 1100px;
+    margin: 0% auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.flex {}
