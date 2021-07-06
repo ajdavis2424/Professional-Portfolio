@@ -70,7 +70,7 @@ img {
 }
 
 .showcase h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .showcase p{
@@ -82,11 +82,40 @@ img {
     gap: 30px;
     overflow: visible;
 }
+/* Z indext to keep card in front-- justify self- flex end to push the form to the right */
 .showcase-form {
     position: relative;
     top: 60px;
-    height: 350;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
 }
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+    border:0
+}
+
+/* STATS */
+.dtats {
+    padding-top: 100px;
+}
+
 
 /* Utilities or classes used allover the website */
 .container {
@@ -104,6 +133,28 @@ img {
     padding: 20px;
     margin: 10px;
 }
+
+.btn {
+    display:inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+}
+
+.btn:hover {
+    transform: scale(.98)
+}
+
+.text-center {
+    text-align: center;
+}
+
 .flex {
     display: flex;
     justify-content: center;
@@ -119,4 +170,78 @@ img {
     justify-content: center;
     align-items: center;
     height: 100px;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* margin */
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+.my-3 {
+    margin: 2rem 0;
+}
+.my-4 {
+    margin: 3rem 0;
+}
+.my-5 {
+    margin: 4rem 0;
+}
+
+.m-1 {
+    margin: 1rem 0;
+}
+
+.m-2 {
+    margin: 1.5rem 0;
+}
+.m-3 {
+    margin: 2rem 0;
+}
+.m-4 {
+    margin: 3rem 0;
+}
+.m-5 {
+    margin: 4rem 0;
+}
+
+/* PADDING */
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+.py-3 {
+    padding: 2rem 0;
+}
+.py-4 {
+    padding: 3rem 0;
+}
+.py-5 {
+    padding: 4rem 0;
+}
+
+.p-1 {
+    padding: 1rem 0;
+}
+
+.p-2 {
+    padding: 1.5rem 0;
+}
+.p-3 {
+    padding: 2rem 0;
+}
+.p-4 {
+    padding: 3rem 0;
+}
+.p-5 {
+    padding: 4rem 0;
 }
