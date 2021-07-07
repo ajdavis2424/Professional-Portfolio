@@ -73,6 +73,10 @@ img {
     font-size: 40px;
 }
 
+.showcase-form img{
+    width: 100%;
+}
+
 .showcase p{
     font-size: 20px;
 }
