@@ -1,0 +1,43 @@
+:root{
+	--main-Color:#eaeaea;
+	--secondary-Color:#fff;
+
+	--border-Color:#c1c1c1;
+
+	--main-Text:black;
+	--secondary-Text:#4b5156;
+
+    }
+
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--main-Text);
+}
+
+p, li, span, label, textarea{
+    color: var(--secondary-Text);
+}
+
+.s1{
+    background-color: var(--main-Color);
+    border-bottom: 1px solid var(--border-Color);
+    overflow: auto;
+}
+
+.s2{
+    background-color: var(--secondary-Text);
+    border-bottom:1px solid var(--border-Color);
+    overflow: auto;
+}
+
+main-container{
+    width:1200px;
+    margin: 0 auto;
+}
+
+}
